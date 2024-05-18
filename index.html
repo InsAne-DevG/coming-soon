@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsAne Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="main-section">
+        <div class="intro-image">
+            <div class="mid-section main-margin-top">
+                <h1 class="title">
+                    Website Under <span class="yellow">Construction!!!</span>
+                </h1>
+                <div class="animated-item">
+                    <div id="element"></div>
+                </div>
+                <div class="form-main">
+                    <div class="main-wrapper">
+                        <h3 class="form-head">Let's Start a Conversation</h3>
+                        <form class="form-wrapper" action="save-contact.php" method="post">
+                            <div class="form-card">
+                                <input class="form-input" type="text" name="full_name" />
+                                <label class="form-label" for="full_name">Full Name</label>
+                            </div>
+                            <span class="error" id="full_name_error"></span>
+
+                            <div class="form-card">
+                                <input class="form-input" type="text" name="email" />
+                                <label class="form-label" for="email">Email</label>
+                            </div>
+                            <span class="error" id="email_error"></span>
+
+                            <div class="form-card">
+                                <input class="form-input" type="text" name="phone_number" />
+                                <label class="form-label" for="phone_number">Phone number</label>
+                            </div>
+                            <span class="error" id="phone_number_error"></span>
+
+                            <div class="form-card">
+                                <textarea class="form-textarea" maxlength="420" rows="3" name="message"></textarea>
+                                <label class="form-textarea-label" for="message">Message</label>
+                            </div>
+                            <span class="error" id="message_error"></span>
+
+                            <div class="error-message d-none">Something went wrong, Please try again.</div>
+                            <div class="success-message d-none">Thank You, We will get back to you.</div>
+                            <div class="btn-wrap">
+                                <button class="btn"> Submit </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-section {
+    background-image: url('/assets/images/background.jpg');
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro-image {
+    background-color: rgb(0 0 0 / 40%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.mid-section {
+    width: 500px;
+    text-align: center;
+}
+
+.animated-item {
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    color: #ffff00;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.main-margin-top {
+    margin-top: 13vh;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.form-main .main-wrapper {
+    width: 100%;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff85;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(1, 1, 1, 1) 100%);
+}
+
+@media screen and (max-width: 767px) {
+    .form-main .main-wrapper {
+        width: 90%;
+    }
+}
+
+.form-main .main-wrapper .form-head {
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 25px 0 25px;
+}
+
+.form-main .main-wrapper .form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card {
+    position: relative;
+    width: 90%;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-input {
+    padding: 20px 25px 15px;
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    border: 1px solid #000;
+    background: #212121;
+    outline: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-input:valid,
+.form-main .main-wrapper .form-wrapper .form-card .form-input:focus {
+    border: 1px solid #515151;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-input:valid~.form-label,
+.form-main .main-wrapper .form-wrapper .form-card .form-input:focus~.form-label {
+    color: #adadad;
+    top: 30%;
+    transform: translateY(-70%);
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-input:-webkit-autofill,
+.form-main .main-wrapper .form-wrapper .form-card .form-input:-webkit-autofill:hover,
+.form-main .main-wrapper .form-wrapper .form-card .form-input:-webkit-autofill:focus,
+.form-main .main-wrapper .form-wrapper .form-card .form-input:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-input::-webkit-outer-spin-button,
+.form-main .main-wrapper .form-wrapper .form-card .form-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-label {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea {
+    padding: 20px 25px 15px;
+    border-radius: 30px;
+    width: 100%;
+    border: 1px solid #000;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    resize: none;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:valid,
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:focus {
+    border: 1px solid #515151;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:valid~.form-textarea-label,
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:focus~.form-textarea-label {
+    color: #adadad;
+    top: 18%;
+    transform: translateY(-82%);
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:-webkit-autofill,
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:-webkit-autofill:hover,
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:-webkit-autofill:focus,
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.form-main .main-wrapper .form-wrapper .form-card .form-textarea-label {
+    position: absolute;
+    left: 25px;
+    top: 30%;
+    transform: translateY(-70%);
+    pointer-events: none;
+    transition: 0.3s;
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.btn {
+    border-width: 2px;
+    font-size: 18px;
+    width: 130px;
+    border: 2px solid #091696;
+    padding: 8px 5px;
+    background-color: transparent !important;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    color: #ffff00;
+    background-color: #091696 !important;
+}
+
+.d-none {
+    display: none;
+}
+
+.error {
+    color: rgb(255 46 46);
+}
+
+.error-message {
+    color: rgb(255 46 46);
+}
+
+.success-message {
+    color: rgb(46, 255, 46);
+}
+
